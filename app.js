@@ -53,7 +53,7 @@ export default {
         const data = await loadSheet(env);
         const now = Date.now();
         const visible = data.filter(
-          row => row.datetime <= now/1000,
+          row => row.datetime && row.datetime <= now/1000,
         ).sort((a, b) => b.datetime - a.datetime);
         return Response.json(visible);
       } catch (err) {
