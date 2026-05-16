@@ -1,0 +1,9 @@
+name = "sheet2ccip-announcement"
+main = "app.js"
+compatibility_date = "2025-05-15"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+SHEET_ID = "REPLACE_WITH_YOUR_SHEET_ID"
+SHEET_GID = "0"
+CACHE_TTL_MS = "60000"
